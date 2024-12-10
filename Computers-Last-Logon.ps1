@@ -1,0 +1,1 @@
+﻿Get-ADComputer -Filter * -properties * | sort LastLogonDate | select-Object Name, OperatingSystem, LastLogonDate | Export-CSV -NoType "C:\kworking\ComputersLastLogon.csv"
